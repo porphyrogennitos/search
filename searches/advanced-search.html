@@ -12,6 +12,7 @@
 
     <title>Advanced search</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand justify-content-end">
         <ul class="navbar-nav">
@@ -20,8 +21,28 @@
         </ul>
     </nav>
 
+    <h1 class="text-danger fs-4 fw-normal">Advanced Search</h1>
+    <hr>
+
     <form action="">
-        <input type="submit" value="Advanced Search">
+        <div class="mb-3">
+            <label for="allTheseWords" class="form-label">all these words:</label>
+            <input type="text" class="form-control" id="allTheseWords">
+        </div>
+        <div class="mb-3">
+            <label for="exactWordOrPhrase" class="form-group">this exact word or phrase:</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="anyOfTheseWords" class="form-label">any of this words:</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="noneOfTheseWords" class="form-label">none of these words:</label>
+            <input type="text" class="form-control">
+        </div>
+        <input class="btn btn-sm btn-primary" type="submit" value="Advanced Search">
     </form>
 </body>
+
 </html>
